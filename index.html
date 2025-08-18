@@ -20,9 +20,8 @@
         <li><a href="#tools">Tools</a></li>
         <li><a href="#education">Education & Work</a></li>
         <li><a href="#projects">Project</a></li>
-        <li><a href="#footer">Contact</a></li>
         <!-- 🔹 Contact Button moved inside nav -->
-        <li><a href="#" class="contact-btn">Contact Me</a></li>
+        <li><a href="#footer" class="contact-btn">Contact Me</a></li>
       </ul>
     </nav>
 
@@ -82,42 +81,42 @@
       </div>
       <div class="tool-card">
         <img src="js.png" alt="JavaScript" class="tool-icon">
-        <p class="tool-percent">90%</p>
+        <p class="tool-percent">80%</p>
         <p class="tool-name">JavaScript</p>
       </div>
       <div class="tool-card">
-        <img src="react.jpg" alt="React" class="tool-icon">
-        <p class="tool-percent">85%</p>
+        <img src="react.png" alt="React" class="tool-icon">
+        <p class="tool-percent">70%</p>
         <p class="tool-name">React.js</p>
       </div>
       <div class="tool-card">
-        <img src="mongo.jpg" alt="MongoDB" class="tool-icon">
-        <p class="tool-percent">90%</p>
+        <img src="mongo.png" alt="MongoDB" class="tool-icon">
+        <p class="tool-percent">80%</p>
         <p class="tool-name">MongoDB</p>
       </div>
       <div class="tool-card">
-        <img src="python.jpg" alt="Python" class="tool-icon">
-        <p class="tool-percent">95%</p>
+        <img src="python.png" alt="Python" class="tool-icon">
+        <p class="tool-percent">60%</p>
         <p class="tool-name">Python</p>
       </div>
       <div class="tool-card">
-        <img src="java.jpg" alt="Java" class="tool-icon">
-        <p class="tool-percent">90%</p>
+        <img src="Java.png" alt="Java" class="tool-icon">
+        <p class="tool-percent">70%</p>
         <p class="tool-name">Java</p>
       </div>
       <div class="tool-card">
-        <img src="git.jpg" alt="GitHub" class="tool-icon">
+        <img src="github.png" alt="GitHub" class="tool-icon">
         <p class="tool-percent">90%</p>
         <p class="tool-name">GitHub</p>
       </div>
       <div class="tool-card">
-        <img src="node.jpg" alt="Node.js" class="tool-icon">
-        <p class="tool-percent">90%</p>
+        <img src="node.png" alt="Node.js" class="tool-icon">
+        <p class="tool-percent">80%</p>
         <p class="tool-name">Node.js</p>
       </div>
       <div class="tool-card">
         <img src="gitt.png" alt="Git" class="tool-icon">
-        <p class="tool-percent">90%</p>
+        <p class="tool-percent">70%</p>
         <p class="tool-name">Git</p>
       </div>
       <div class="tool-card">
@@ -132,7 +131,7 @@
       </div>
       <div class="tool-card">
         <img src="postgres.png" alt="Postgres" class="tool-icon">
-        <p class="tool-percent">90%</p>
+        <p class="tool-percent">70%</p>
         <p class="tool-name">Postgres</p>
       </div>
       <div class="tool-card">
@@ -198,7 +197,10 @@
   <!-- Projects Section -->
 <section id="projects" class="projects-section">
   <div class="container">
-    <h2 class="section-title">My Latest <span>Projects</span></h2>
+    <h3 class="project-subtitle">– My Projects</h3>
+    <h2 class="project-title">
+      <strong>My Work & Creations</strong>
+    </h2>
     
 
     <div class="projects-grid">
@@ -277,11 +279,6 @@
     });
     window.addEventListener("beforeunload", () => {
   localStorage.setItem("scrollPos", window.scrollY);
-});
-
-window.addEventListener("load", () => {
-  const scrollPos = localStorage.getItem("scrollPos");
-  if (scrollPos) window.scrollTo(0, scrollPos);
 });
 
   </script>
