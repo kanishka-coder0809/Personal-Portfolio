@@ -211,7 +211,7 @@ html, body {
 }
 
 .hero-text {
-  flex: 1 1 400px;
+  flex: 1 ;
   max-width: 600px;
 }
 
@@ -292,6 +292,8 @@ h1 {
   border: 4px solid #f6a623;
   max-width: 90vw;   /* responsive width */
   max-height: 90vw;  /* keep circular shape */
+  margin-top: 15%;
+  margin-left: 60%;
 }
 
 .profile-image img {
@@ -299,17 +301,20 @@ h1 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+ 
 }
 
 .profile-name {
   font-size: 24px;
   font-weight: bold;
   margin-top: 15px;
+  margin-left: 60%;
 }
 
 .profile-role {
   font-size: 16px;
   color: #666;
+  margin-left: 60%;
 }
 
 /* ✅ RESPONSIVE ADJUSTMENTS */
@@ -767,4 +772,3 @@ textarea {
 .contact-info a:hover {
   text-decoration: underline;
 }
-
