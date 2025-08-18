@@ -132,6 +132,16 @@ html, body {
     margin-top: 20px;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .profile-container {
+    margin-top: 10px;
+  }
+}
 
 /* Mobiles */
 @media (max-width: 768px) {
@@ -307,6 +317,8 @@ h1 {
   .profile-image {
     width: 220px;
     height: 220px;
+    
+    
   }
   .profile-name {
     font-size: 20px;
@@ -326,6 +338,17 @@ h1 {
   }
   .profile-role {
     font-size: 13px;
+  }
+}
+/* 🛠 Fix extra gap on profile image when collapsing */
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 10;              /* remove auto top margin */
+    padding: 0;             /* remove extra padding */
+  }
+
+  .profile-image {
+    margin: 0 auto;         /* only center horizontally */
   }
 }
 
