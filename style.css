@@ -20,7 +20,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -77,8 +76,6 @@ html, body {
 .nav-links li a:hover::after {
   width: 100%;
 }
-
-
 .contact-btn {
   background: #3d993d;
   color: #0f0b0b;
@@ -87,7 +84,6 @@ html, body {
   text-decoration: none;
   white-space: nowrap;
 }
-
 /* 🔹 Hamburger Icon */
 .hamburger {
   display: none;
@@ -95,7 +91,6 @@ html, body {
   cursor: pointer;
   gap: 5px;
 }
-
 .hamburger div {
   width: 25px;
   height: 3px;
@@ -175,9 +170,6 @@ html, body {
     text-align: center;
   }
 }
-
-
-
 /* Mobiles */
 @media (max-width: 768px) {
   .navbar {
@@ -233,8 +225,6 @@ html, body {
     font-size: 14px;
   }
 }
-
-
 /* HERO SECTION */
 .hero {
   display: flex;
@@ -314,7 +304,8 @@ h1 {
 .profile-container {
   text-align: center;
   flex: 1 1 250px;
-  margin: 0 auto; /* centers whole block */
+  margin: 0 auto;
+  
 }
 
 .profile-image {
@@ -611,10 +602,9 @@ h1 {
   }
 }
 .projects-section {
-  padding: 60px 20px;
+  padding: 60px 60px;
   background: #fff;
 }
-
 .section-title {
   font-size: 2rem;
   font-weight: bold;
@@ -641,6 +631,12 @@ h1 {
   gap: 25px;
   margin-top: 50px;
 }
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch; /* ensures all cards stretch equally */
+}
 
 .project-card {
   background: #fafafa;
@@ -648,6 +644,12 @@ h1 {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  height: 100%; /* keeps them equal */
+
 }
 
 .project-card:hover {
@@ -658,6 +660,8 @@ h1 {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .project-tags span {
@@ -670,10 +674,9 @@ h1 {
   display: inline-block;
   margin-bottom: 10px;
 }
-
-.project-title {
+.project-titles{
   font-size: 1.2rem;
-  margin: 10px;
+  margin: 5px;
 }
 /* ===== Projects Section Heading ===== */
 .project-subtitle {
@@ -704,8 +707,6 @@ h1 {
   margin: 10px auto 0;
   border-radius: 2px;
 }
-
-
 .project-link {
   display: inline-block;
   margin-top: 10px;
